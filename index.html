@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabardian Language Translator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Kabardian Language Translator</h1>
+        <div class="input-section">
+            <textarea id="inputText" placeholder="Enter text here..."></textarea>
+        </div>
+        <div class="controls">
+            <select id="translationDirection">
+                <option value="kb-en">Kabardian to English</option>
+                <option value="en-kb">English to Kabardian</option>
+            </select>
+            <button onclick="translateText()">Translate</button>
+        </div>
+        <div class="output-section">
+            <h2>Translated Text:</h2>
+            <p id="outputText"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
